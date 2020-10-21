@@ -25,7 +25,8 @@ func init() {
 	dists = []distroInfo{
 		{"Debian", nil, nil},
 		{"Ubuntu", nil, nil},
-		{"openSUSE", []string{"SUSE Linux", "openSUSE project"}, []string{"/etc/SuSE-release"}},
+		{"SLE", []string{"sles", "suse"}, nil},
+		{"openSUSE", []string{"opensuse", "opensuse leap"}, nil},
 		{"Mint Linux", []string{"LinuxMint", "mint"}, nil},
 		{"Gentoo", nil, []string{"/etc/gentoo-release"}},
 		{"Fedora", nil, []string{"/etc/fedora-release"}},
