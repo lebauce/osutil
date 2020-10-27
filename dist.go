@@ -23,14 +23,14 @@ type Distro struct {
 
 func init() {
 	dists = []distroInfo{
-		{"Debian", nil, nil},
-		{"Ubuntu", nil, nil},
+		{"Debian", []string{"debian gnu/linux"}, nil},
+		{"Ubuntu", []string{"ubuntu"}, nil},
 		{"SLE", []string{"sles", "suse"}, nil},
 		{"openSUSE", []string{"opensuse", "opensuse leap"}, nil},
-		{"Mint Linux", []string{"LinuxMint", "mint"}, nil},
+		{"Mint Linux", []string{"linuxmint", "mint"}, nil},
 		{"Gentoo", nil, []string{"/etc/gentoo-release"}},
 		{"Fedora", nil, []string{"/etc/fedora-release"}},
-		{"CentOS", nil, []string{"/etc/centos-release"}},
+		{"CentOS", []string{"centos linux"}, []string{"/etc/centos-release"}},
 		{"Arch Linux", []string{"archlinux", "archarm", "arch"}, nil},
 		{"Kali Linux", []string{"kali", "debian kali linux"}, nil},
 	}
